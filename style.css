@@ -43,6 +43,10 @@ a{
   font-size: 1.25rem;
 }
 
+.section[open] summary::after {
+  content: "−";
+}
+
 .section > *:not(summary) {
   margin-top: 1rem;
 }
