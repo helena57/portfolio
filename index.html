@@ -49,5 +49,18 @@
 				 <a href="mailto:mulugeta.helena@gmail.com">Email Me</a>
 			   </div>
 		</details>
+	
+<!--Javascript Code-->
+	<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      menuToggle.textContent =
+        navLinks.classList.contains("open") ? "✕" : "☰";
+    });
+  </script>
+	
 </body>
 </html>
