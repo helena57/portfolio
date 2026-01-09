@@ -12,6 +12,7 @@ header {
   text-align: center;
   background: #111;
   color: #FFF;
+  position: relative;
 }
 
 .section {
@@ -79,6 +80,9 @@ a{
     font-size: 1.75rem;
     cursor: pointer;
     color: white;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
   }
 
   .nav {
