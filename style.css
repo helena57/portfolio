@@ -14,7 +14,8 @@ a { text-decoration: none; }
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* all items start on left */
+  gap: 2rem; /* space between brand and links */
   padding: 1rem 2rem;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -22,11 +23,19 @@ a { text-decoration: none; }
   top: 0;
   z-index: 100;
 }
+
+.nav-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 .nav-links {
   display: flex;
   gap: 1.5rem;
   list-style: none;
+  margin-left: 0; /* remove automatic spacing */
 }
+
 .nav-links.open { display: flex; flex-direction: column; margin-top: 1rem; }
 .menu-toggle {
   display: none;
