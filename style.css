@@ -73,15 +73,29 @@ a {
 
 .subtitle {
   font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+  margin: 0.5rem 0;
 }
 
 .tagline {
-  margin-bottom: 1.75rem;
+  margin: 0.75rem 0 1.5rem;
 }
 
-.hero .btn {
-  margin-top: 2rem; /* more breathing room below tagline */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: #FBBF24;
+  color: #1F2937;
+}
+
+.secondary-btn {
+  background: #fff;
+  color: #4F46E5;
+  margin-left: 0.5rem;
 }
 
 /* ------------------ SECTIONS ------------------ */
@@ -100,8 +114,8 @@ a {
 /* ------------------ PROJECT GRID ------------------ */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem; /* slightly larger gap for cleaner spacing */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   justify-items: center;
 }
 
@@ -124,24 +138,11 @@ a {
   margin-bottom: 1rem;
 }
 
-.project-card h3 {
-  margin-bottom: 0.75rem;
-}
-
-.project-card p {
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-}
-
-.project-card .btn {
-  margin-top: 1.5rem;
-}
-
 /* ------------------ STORE GRID ------------------ */
 .store-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .store-card {
@@ -164,12 +165,7 @@ a {
 .store-card p {
   font-size: 0.95rem;
   color: #374151;
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-}
-
-.store-card .btn {
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .private-note {
@@ -178,12 +174,7 @@ a {
   font-style: italic;
 }
 
-/* ------------------ ABOUT & SKILLS ------------------ */
-#about p {
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
-
+/* ------------------ SKILLS ------------------ */
 .skills {
   list-style: none;
   display: flex;
@@ -194,11 +185,7 @@ a {
   margin-top: 1rem;
 }
 
-/* ------------------ CONTACT & SOCIAL LINKS ------------------ */
-#contact .btn {
-  margin-bottom: 1.5rem; /* space between button and social links */
-}
-
+/* ------------------ SOCIAL LINKS ------------------ */
 .social-links {
   display: flex;
   gap: 1rem;
@@ -266,6 +253,7 @@ footer {
   .project-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    justify-items: center;
   }
 
   /* STORE GRID */
@@ -278,24 +266,15 @@ footer {
   .section {
     padding: 3rem 1rem;
   }
+
+  /* SKILLS */
+  .skills {
+    justify-content: center;
+  }
+
+  /* SOCIAL LINKS */
+  .social-links {
+    justify-content: center;
+  }
 }
 
-/* ------------------ GENERAL SPACING IMPROVEMENTS ------------------ */
-.section h2,
-.project-card h3,
-.store-card h3 {
-  margin-bottom: 1rem;
-}
-
-.section p,
-.project-card p,
-.store-card p {
-  margin-bottom: 1.25rem;
-  line-height: 1.6;
-}
-
-.project-card .btn,
-.store-card .btn,
-.hero .btn {
-  margin-top: 1rem;
-}
