@@ -9,96 +9,84 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <nav class="nav">
-      <div class="nav-brand">Helena Mulugeta</div>
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav-brand">Helena Mulugeta</div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Helena Mulugeta</h1>
-      <p class="role">Web Developer & UX Designer</p>
-      <p class="tagline">I create digital experiences that are intuitive, beautiful, and data-driven.</p>
-      <a href="#projects" class="btn">See My Work</a>
-      <a href="resume.pdf" class="btn btn-secondary">Download Resume</a>
+      <h1>Hi, I’m Helena</h1>
+      <p class="subtitle">Web Developer & UX Designer</p>
+      <p class="tagline">I build modern experiences that are intuitive and impactful.</p>
+      <a href="#projects" class="btn primary-btn">See My Work</a>
+      <a href="resume.pdf" class="btn secondary-btn">Download Resume</a>
     </div>
     <div class="hero-image">
       <img src="headshot.png" alt="Helena Mulugeta">
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
+  <!-- PROJECTS -->
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2>Featured Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <img src="project1.png" alt="Project 1 Screenshot">
+        <img src="project1.png" alt="Screenshot of Competitive Workout App">
         <h3>Competitive Workout App</h3>
-        <p>Built a responsive workout app using React, PowerApps, and PowerBI. Increased user engagement by 20%.</p>
-        <p><strong>Tech:</strong> React, HTML/CSS, PowerBI</p>
-        <a href="#">View Case Study</a>
+        <p>A responsive app built with React and PowerApps. Solved UX issues and increased engagement.</p>
+        <a href="https://github.com/helena57/workout-app" target="_blank">View Code</a>
       </div>
-
-      <div class="project-card">
-        <img src="project2.png" alt="Project 2 Screenshot">
-        <h3>Webstore Development</h3>
-        <p>Developed e-commerce webstores for clients, improving sales and UX with clean design and smooth navigation.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
-        <a href="#">View Case Study</a>
-      </div>
-
-      <!-- Add more project cards as needed -->
+      <!-- Add more cards here -->
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hi, I’m Helena — a Web Developer and UX Designer based in Silver Spring, MD. I build responsive web applications and visually compelling digital experiences. I combine design, data, and user feedback to solve real problems.</p>
+    <p>I'm a designer and developer based in Silver Spring, MD. I focus on creating beautiful, user-centered digital experiences.</p>
     <h3>Skills</h3>
     <ul class="skills">
-      <li>React / HTML / CSS</li>
-      <li>JavaScript</li>
-      <li>Figma / Adobe XD</li>
-      <li>PowerBI / Data Visualization</li>
+      <li>React / JavaScript</li>
+      <li>HTML / CSS</li>
+      <li>Figma / UX Design</li>
+      <li>Data Visualization (PowerBI)</li>
     </ul>
   </section>
 
-  <!-- CONTACT SECTION -->
+  <!-- CONTACT -->
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Let’s work together or connect!</p>
-    <a href="mailto:mulugeta.helena@gmail.com" class="btn">Email Me</a>
+    <p>Let's build something together!</p>
+    <a href="mailto:mulugeta.helena@gmail.com" class="btn primary-btn">Email Me</a>
     <div class="social-links">
       <a href="https://github.com/helena57" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/helena-mulugeta" target="_blank">LinkedIn</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>&copy; 2026 Helena Mulugeta</p>
   </footer>
 
-  <!-- JS -->
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navLinks = document.querySelector(".nav-links");
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-      menuToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
-    });
-  </script>
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    menuToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+  });
+</script>
+
 </body>
 </html>
+
