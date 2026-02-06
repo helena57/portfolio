@@ -277,3 +277,41 @@ footer {
     justify-content: center;
   }
 }
+
+/* ------------------ SPACING IMPROVEMENTS ------------------ */
+
+/* Add spacing below headings and above paragraphs in sections */
+.section h2,
+.project-card h3,
+.store-card h3 {
+  margin-bottom: 1rem;
+}
+
+.section p,
+.project-card p,
+.store-card p {
+  margin-bottom: 1.25rem; /* space before buttons or next element */
+  line-height: 1.6;        /* improves readability */
+}
+
+/* Ensure buttons have space above them */
+.project-card .btn,
+.store-card .btn,
+.hero .btn {
+  margin-top: 1rem;
+}
+
+/* Optional: more breathing room for About Me text */
+#about p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+/* Optional: add spacing between subtitle and tagline in hero */
+.hero .subtitle {
+  margin-bottom: 0.75rem;
+}
+
+.hero .tagline {
+  margin-bottom: 1.75rem;
+}
