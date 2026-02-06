@@ -140,7 +140,16 @@ a {
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   max-width: 350px;
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+.project-card .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
 
 .project-card:hover {
   transform: translateY(-7px);
