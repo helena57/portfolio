@@ -21,7 +21,7 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-text">
       <h1>Hi, I’m Helena</h1>
@@ -35,7 +35,7 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS SECTION -->
   <section id="projects" class="section">
     <h2>Featured Projects</h2>
     <div class="project-grid">
@@ -45,24 +45,32 @@
         <p>A responsive app built with React and PowerApps. Solved UX issues and increased engagement.</p>
         <a href="https://github.com/helena57/workout-app" target="_blank">View Code</a>
       </div>
-      <!-- Add more cards here -->
+
+      <div class="project-card">
+        <img src="project2.png" alt="Screenshot of Webstore Project">
+        <h3>Webstore Development</h3>
+        <p>Developed e-commerce webstores for clients, improving UX and boosting sales.</p>
+        <a href="https://github.com/helena57/webstore" target="_blank">View Code</a>
+      </div>
+
+      <!-- Add more project cards as needed -->
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I'm a designer and developer based in Silver Spring, MD. I focus on creating beautiful, user-centered digital experiences.</p>
+    <p>I'm Helena — a Web Developer and UX Designer based in Silver Spring, MD. I focus on creating beautiful, user-centered digital experiences that solve real problems.</p>
     <h3>Skills</h3>
     <ul class="skills">
       <li>React / JavaScript</li>
       <li>HTML / CSS</li>
       <li>Figma / UX Design</li>
-      <li>Data Visualization (PowerBI)</li>
+      <li>PowerBI / Data Visualization</li>
     </ul>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT SECTION -->
   <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Let's build something together!</p>
@@ -73,20 +81,20 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2026 Helena Mulugeta</p>
   </footer>
 
-<script>
-  const menuToggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+  <!-- JAVASCRIPT -->
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
-    menuToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
-  });
-</script>
-
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      menuToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+    });
+  </script>
 </body>
 </html>
-
