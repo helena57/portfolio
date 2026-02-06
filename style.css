@@ -12,11 +12,6 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
 /* ------------------ NAVBAR ------------------ */
 .nav {
   display: flex;
@@ -111,66 +106,72 @@ h2 {
   text-align: center;
 }
 
-/* ------------------ PROJECT + STORE GRIDS ------------------ */
-.project-grid,
-.store-grid {
+.section h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* ------------------ PROJECT GRID ------------------ */
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   justify-items: center;
 }
 
-/* ------------------ PROJECT + STORE CARDS ------------------ */
-.project-card,
-.store-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.project-card {
   background: #fff;
-  padding: 1.75rem 1.5rem;
+  padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   max-width: 350px;
   transition: transform 0.3s;
-  text-align: left;
 }
 
-.project-card:hover,
-.store-card:hover {
+.project-card:hover {
   transform: translateY(-7px);
 }
 
-.project-card img,
-.store-card img {
+.project-card img {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-.project-card h3,
+/* ------------------ STORE GRID ------------------ */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.store-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.store-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
 .store-card h3 {
   margin-bottom: 0.5rem;
 }
 
-.project-card p,
 .store-card p {
-  margin-bottom: 1.25rem;
   font-size: 0.95rem;
   color: #374151;
+  margin-bottom: 1rem;
 }
 
 .private-note {
-  margin-top: 0.5rem;
   font-size: 0.85rem;
   color: #6b7280;
   font-style: italic;
-  display: block;
-}
-
-.project-card .btn,
-.store-card .btn {
-  margin-top: auto;
-  display: inline-block;
 }
 
 /* ------------------ SKILLS ------------------ */
@@ -200,7 +201,7 @@ footer {
   text-align: center;
 }
 
-/* ------------------ PAGE HEADER ------------------ */
+/* ------------------ PAGE HEADER (Optional for Stores page) ------------------ */
 .page-header {
   padding: 4rem 2rem 2rem;
   max-width: 1000px;
@@ -248,16 +249,17 @@ footer {
     display: block;
   }
 
-  /* PROJECT + STORE GRID */
-  .project-grid,
+  /* PROJECT GRID */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  /* STORE GRID */
   .store-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  .project-card,
-  .store-card {
-    max-width: 100%;
   }
 
   /* SECTIONS */
@@ -265,8 +267,12 @@ footer {
     padding: 3rem 1rem;
   }
 
-  /* SKILLS & SOCIAL */
-  .skills,
+  /* SKILLS */
+  .skills {
+    justify-content: center;
+  }
+
+  /* SOCIAL LINKS */
   .social-links {
     justify-content: center;
   }
