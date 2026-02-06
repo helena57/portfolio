@@ -51,6 +51,14 @@ a { text-decoration: none; }
   gap: 2rem;
   padding: 3rem 2rem;
   text-align: center;
+
+  /* add this */
+  background: linear-gradient(135deg, #4F46E5, #6366F1);
+  color: #fff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: none; /* make sure it spans full width */
+  box-sizing: border-box;
 }
 
 .hero:has(.hero-image) {
@@ -58,7 +66,13 @@ a { text-decoration: none; }
   text-align: left;
 }
 
-.hero-text { flex: 1 1 300px; margin-bottom: 2rem; text-align: left; }
+.hero-text {
+  margin: 0 auto;        /* center horizontally */
+  max-width: 600px;      /* keeps text from stretching too wide */
+  text-align: center;    /* centers text nicely */
+  margin-bottom: 2rem;
+}
+
 .hero-image { flex: 1 1 250px; text-align: center; }
 .hero-image img { max-width: 250px; border-radius: 50%; }
 .subtitle { font-size: 1.2rem; margin: 0.5rem 0; }
