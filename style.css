@@ -281,7 +281,7 @@ footer {
 /* ------------------ RESPONSIVE ------------------ */
 @media (max-width: 768px) {
 
-  /* HERO */
+  /* ------------------ HERO ------------------ */
   .hero {
     padding: 4rem 1rem;
   }
@@ -299,7 +299,7 @@ footer {
     font-size: 1rem;
   }
 
-  /* NAVBAR */
+  /* ------------------ NAVBAR ------------------ */
   .nav-links {
     display: none;
   }
@@ -308,42 +308,47 @@ footer {
     display: block;
   }
 
-  /* PROJECT GRID */
+  /* ------------------ PROJECT GRID ------------------ */
   .project-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* stack projects */
     gap: 1.5rem;
     justify-items: center;
   }
 
-  /* STORE GRID */
+  .project-card {
+    max-width: 100%;
+  }
+
+  /* ------------------ STORE GRID ------------------ */
   .store-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* stack stores */
     gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem; /* extra breathing room */
+  }
+
+  .store-card {
+    height: auto; /* natural stacking height */
     margin-bottom: 2rem;
   }
 
-  /* SECTIONS */
+  .store-card .btn {
+    margin-bottom: 0; /* remove extra button spacing */
+  }
+
+  /* ------------------ SECTIONS ------------------ */
   .section {
     padding: 3rem 1rem;
   }
 
-  /* SKILLS */
+  /* ------------------ SKILLS & SOCIAL ------------------ */
   .skills {
     justify-content: center;
   }
 
-  /* SOCIAL LINKS */
   .social-links {
     justify-content: center;
     margin-top: 1.5rem;
   }
-  @media (max-width: 768px) {
-  .store-card {
-    height: auto; /* allow each card to size naturally */
-    margin-bottom: 2rem; /* extra space between stacked cards */
-  }
+
 }
-}
-
-
-
