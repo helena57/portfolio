@@ -183,7 +183,6 @@ a {
 .store-card .btn {
   margin-top: 1.5rem; /* space from text */
   align-self: center;
-  margin-bottom: 1.5rem; /*space from card */
 }
 
 .store-card img {
@@ -338,6 +337,12 @@ footer {
     justify-content: center;
     margin-top: 1.5rem;
   }
+  @media (max-width: 768px) {
+  .store-card {
+    height: auto; /* allow each card to size naturally */
+    margin-bottom: 2rem; /* extra space between stacked cards */
+  }
+}
 }
 
 
