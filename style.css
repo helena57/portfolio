@@ -173,6 +173,7 @@ a {
   border-radius: 14px;
   padding: 1.5rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom: 1.5rem;
 
   display: flex;
   flex-direction: column;
@@ -182,6 +183,7 @@ a {
 .store-card .btn {
   margin-top: 1.5rem; /* space from text */
   align-self: center;
+  margin-bottom: 1.5rem; /*space from card */
 }
 
 .store-card img {
