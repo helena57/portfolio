@@ -317,6 +317,7 @@ footer {
 
   .project-card {
     max-width: 100%;
+    height: auto;
   }
 
   /* ------------------ STORE GRID ------------------ */
@@ -330,10 +331,11 @@ footer {
   .store-card {
     height: auto; /* natural stacking height */
     margin-bottom: 2rem;
+    flex: none; /* prevent flex from stretching */
   }
 
   .store-card .btn {
-    margin-bottom: 0; /* remove extra button spacing */
+    margin-bottom: 0; /* remove extra space from buttons */
   }
 
   /* ------------------ SECTIONS ------------------ */
