@@ -233,7 +233,7 @@ footer {
   text-align: center;
 }
 
-/* ------------------ PAGE HEADER (Optional for Stores page) ------------------ */
+/* ------------------ PAGE HEADER ( for Stores page) ------------------ */
 .page-header {
   padding: 4rem 2rem 2rem;
   max-width: 1000px;
@@ -251,9 +251,7 @@ footer {
   font-size: 1.1rem;
 }
 
-/* ------------------ SPACING IMPROVEMENTS ------------------ */
-
-/* Add spacing below headings and above paragraphs in sections */
+/* To Add spacing below headings and above paragraphs in sections */
 .section h2,
 .project-card h3,
 .store-card h3 {
@@ -319,7 +317,8 @@ footer {
   /* STORE GRID */
   .store-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   /* SECTIONS */
